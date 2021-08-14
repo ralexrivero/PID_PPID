@@ -19,5 +19,7 @@ int main(void)
 
         puts(varChr_str);
         
+        free(varChr_str);
+        
         return (0);
 }
