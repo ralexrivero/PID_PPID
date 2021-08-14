@@ -8,4 +8,16 @@
 
 int main(void)
 {
+        ssize_t varSST_read = 0;
+        size_t varSTp_read_bytes = 0;
+        char * varChr_str = NULL;
+        /* asign 0 and NULL to make getline reserve the right ammount of memory */
+
+        write(1, "$ ", 2);
+
+        varSTp_read_bytes = getline( &varChr_str, &varSST_read, stdin );
+
+        puts(varChr_str);
+        
+        return (0);
 }
