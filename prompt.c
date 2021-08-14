@@ -17,9 +17,9 @@ int main(void)
 
         varSTp_read_bytes = getline( &varChr_str, &varSST_read, stdin );
 
-        puts(varChr_str);
+        write(1, varChr_str, varSST_read);
         
         free(varChr_str);
-        
+
         return (0);
 }
