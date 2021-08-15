@@ -9,7 +9,6 @@
 
 int main(int argc, char *argv[])
 {
-
         char **ptrChr_str = NULL;
 
         for (ptrChr_str = argv; *ptrChr_str != NULL; ptrChr_str++)

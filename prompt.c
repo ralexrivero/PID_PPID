@@ -12,8 +12,8 @@ int main(void)
         size_t varSTp_read_bytes = 0;
         char * varChr_str = NULL;
         /* asign 0 and NULL to make getline reserve the right ammount of memory, then dont need malloc*/
-
-        write(1, "$ ", 2);
+        /* the \033[ way color*/
+        write(1, "\033[1;36m$ \033[0m", 17);
 
         varSTp_read_bytes = getline( &varChr_str, &varSST_read, stdin );
 
