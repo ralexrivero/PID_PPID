@@ -26,7 +26,7 @@ int main(void)
         printf("\33[1;36mAfter tokenize: \33[0m\"%s\"\n", str);
 
 
-        for (i = 0; i < strlen(tokens); i++)
+        for (i = 0; i <= strlen(tokens); i++)
         printf("\33[0;32mThe tokens: %s\33[0m\n", tokens[i]);
         return (0);
 }
